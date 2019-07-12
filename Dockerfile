@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:6.6.0
+FROM docker.elastic.co/logstash/logstash:7.2.0
 RUN /usr/share/logstash/bin/logstash-plugin install logstash-input-jdbc
 RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-aggregate
 RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-jdbc_streaming
